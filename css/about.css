@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+
+/* navbar */
+
+nav.navbar-mine {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 0;
+    padding: 0;
+    width: 100vw;
+    height: 49px;
+}
+
+nav.navbar-mine ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 50px;
+}
+
+nav.navbar-mine ul.sidenav li {
+    float: left;
+    padding: 0 16px 0 16px;
+    width: 100px;
+    height: 49px;
+}
+
+nav.navbar-mine ul.sidenav li.remove-padding {
+    padding-left: 0;
+}
+
+nav.navbar-mine ul.sidenav li a {
+    display: block;
+    color: #666;
+    font-weight: 500;
+    text-align: center;
+    padding: 14px 16px 0 16px;
+    text-decoration: none;
+    width: 100px;
+    height: 39px;
+    text-decoration: none;
+    transition: 2s;
+}
+
+nav.navbar-mine ul.sidenav li a:hover:not(.active) {
+    color: #666;
+    font-weight: 500;
+    text-decoration: underline wavy #6664d5 4px;
+    transition: 1s;
+    color: #6664d5;
+}
+
+nav.navbar-mine ul.sidenav li a.active {
+    color: white;
+    font-weight: 500;
+    animation: myfirst 9s linear infinite alternate;
+    transition: 1s;
+}
+
+nav.navbar-mine ul.sidenav li a:hover.active {
+    color: #666;
+    font-weight: 500;
+    animation: none;
+    text-decoration: underline wavy #6664d5 4px;
+}
+
+@keyframes myfirst {
+    0% {
+        background-color: #2EA1DA;
+        color: white;
+        left: 0px;
+        top: 0px;
+        transition: 1s;
+    }
+    25% {
+        background-color: #E83879;
+        color: white;
+        left: 200px;
+        top: 0px;
+        transition: 1s;
+    }
+    50% {
+        background-color: #FBB845;
+        color: white;
+        left: 200px;
+        top: 200px;
+        transition: 1s;
+    }
+    75% {
+        background-color: #28f153;
+        color: white;
+        left: 0px;
+        top: 200px;
+        transition: 1s;
+    }
+    100% {
+        background-color: #4443A3;
+        color: white;
+        left: 0px;
+        top: 0px;
+        transition: 1s;
+    }
+}
+
+
+/* END navbar */
+
+article.container-about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    line-height: 2rem;
+    margin-bottom: 10rem;
+}
+
+article.container-about header h1.header-about {
+    position: relative;
+    display: flex;
+    left: -23rem;
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+article.container-about section.describe {
+    text-align: start;
+    width: 50vw;
+}
+
+article.container-about section.describe p.indent {
+    text-indent: 50px;
+}
+
+article.container-about section.describe p.indent em {
+    margin-left: 10px;
+}
+
+article.container-about section.describe p.thanks a.link-blogs {
+    text-decoration: none;
+    color: #2EA1DA;
+    font-size: 26px;
+    margin-left: 10px;
+}
+
+article.container-about section.describe p.my-path {
+    font-family: 'Gabriela', serif;
+    font-size: 24px;
+    position: relative;
+    display: flex;
+    left: -100px;
+    margin: 40px 0;
+}
+
+article.container-about section.describe p.thanks {
+    font-family: 'Gabriela', serif;
+    text-align: end;
+    font-size: 20px;
+    color: #7C7C7C;
+}
+
+section.for-space {
+    height: 1rem;
+}

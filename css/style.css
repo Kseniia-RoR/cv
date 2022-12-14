@@ -31,12 +31,12 @@ body#colorBody {
     height: 100vh;
 }
 
-#sectionTop {
+section#sectionTop {
     width: 100vw;
     height: 100vh;
 }
 
-button.button-outline-warning {
+section#sectionTop nav.navbar-mine ul.sidenav button.button-outline-warning {
     background-color: transparent;
     background-color: #2d2c6c;
     font-size: 1rem;
@@ -54,9 +54,9 @@ button.button-outline-warning {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-button.button-outline-warning:hover {
+section#sectionTop nav.navbar-mine ul.sidenav button.button-outline-warning:hover {
     color: rgba(68, 68, 68, 0.9);
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.287);
     border-top: 1px solid rgba(68, 68, 68, 0.9);
     border-bottom: 1px solid rgba(68, 68, 68, 0.9);
     width: 240px;
@@ -71,7 +71,7 @@ button.button-outline-warning:hover {
 
 /* animate blocks */
 
-.block {
+div.block {
     position: absolute;
     z-index: -1;
     width: 50px;
@@ -80,11 +80,11 @@ button.button-outline-warning:hover {
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
 }
 
-.block:nth-child(3n+2) {
+div.block:nth-child(3n+2) {
     background: #4443A3;
 }
 
-.block:nth-child(3n+3) {
+div.block:nth-child(3n+3) {
     background: rgba(68, 68, 68, 0.9);
 }
 
@@ -94,7 +94,8 @@ button.button-outline-warning:hover {
 
 /* navbar */
 
-.navbar-mine {
+section#sectionTop nav.navbar-mine {
+    position: absolute;
     display: flex;
     justify-content: start;
     align-items: start;
@@ -104,39 +105,54 @@ button.button-outline-warning:hover {
     height: 49px;
 }
 
-ul {
+section#sectionTop nav.navbar-mine ul.sidenav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
+    /* border: 1px solid #e7e7e7; */
+    background-color: #f3f3f35d;
     width: 100vw;
     height: 50px;
 }
 
-li {
+section#sectionTop nav.navbar-mine ul.sidenav li {
     float: left;
+    padding: 0 16px 0 16px;
+    width: 100px;
+    height: 49px;
 }
 
-li a {
+section#sectionTop nav.navbar-mine ul.sidenav li.remove-padding {
+    padding-left: 0;
+}
+
+section#sectionTop nav.navbar-mine ul.sidenav li a {
     display: block;
-    color: #666;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    width: 80px;
-    height: 50px;
-}
-
-li a:hover:not(.active) {
-    background-color: #ddd;
-}
-
-li a.active {
     color: white;
-    background-color: #4443A3;
+    text-align: center;
+    padding: 14px 16px 0 16px;
+    text-decoration: none;
+    width: 100px;
+    height: 49px;
+}
+
+section#sectionTop nav.navbar-mine ul.sidenav li a:hover:not(.active) {
+    background-color: #ddd;
+    color: #666;
+    font-weight: 500;
+}
+
+section#sectionTop nav.navbar-mine ul.sidenav li a.active {
+    color: white;
+    background-color: #6664d5;
+}
+
+section#sectionTop nav.navbar-mine ul.sidenav li a:hover.active {
+    color: #666;
+    background-color: whitesmoke;
+    font-weight: 500;
 }
 
 
-/* navbar */
+/* END navbar */
