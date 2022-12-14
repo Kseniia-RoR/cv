@@ -1,4 +1,4 @@
-const container_top = document.querySelector('.container-top');
+const container_top = document.querySelector('#colorBody');
 for (var i = 1; i <= 100; i++) {
     const blocks = document.createElement('div');
     blocks.classList.add('block');

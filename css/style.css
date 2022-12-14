@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&EB+Garamond:ital@0;1&Dancing+Script&family=Permanent+Marker&family=Poppins&family=Raleway:wght@200;300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 * {
     box-sizing: content-box;
     margin: 0;
@@ -18,9 +19,124 @@
 }
 
 body#colorBody {
+    position: relative;
     background-color: #2d2c6c;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    font-family: var(--font-main);
+    z-index: 1;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
 }
+
+#sectionTop {
+    width: 100vw;
+    height: 100vh;
+}
+
+button.button-outline-warning {
+    background-color: transparent;
+    background-color: #2d2c6c;
+    font-size: 1rem;
+    text-align: center;
+    width: 200px;
+    height: 24px;
+    padding: 6px 12px;
+    margin-left: 15px;
+    color: white;
+    border: 0;
+    position: absolute;
+    top: 0.4rem;
+    right: 10rem;
+    transition: all 0.3s;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+button.button-outline-warning:hover {
+    color: rgba(68, 68, 68, 0.9);
+    background-color: transparent;
+    border-top: 1px solid rgba(68, 68, 68, 0.9);
+    border-bottom: 1px solid rgba(68, 68, 68, 0.9);
+    width: 240px;
+    height: 24px;
+    margin-left: 15px;
+    right: 9rem;
+    z-index: 2;
+    transition: all 0.3s;
+    letter-spacing: 2px;
+}
+
+
+/* animate blocks */
+
+.block {
+    position: absolute;
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.block:nth-child(3n+2) {
+    background: #4443A3;
+}
+
+.block:nth-child(3n+3) {
+    background: rgba(68, 68, 68, 0.9);
+}
+
+
+/* END animate blocks */
+
+
+/* navbar */
+
+.navbar-mine {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 0;
+    padding: 0;
+    width: 100vw;
+    height: 49px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    width: 100vw;
+    height: 50px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 80px;
+    height: 50px;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4443A3;
+}
+
+
+/* navbar */
