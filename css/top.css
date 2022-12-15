@@ -1,0 +1,144 @@
+section#sectionTop div.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+section#sectionTop div.container div.container-avatar {
+    position: relative;
+    /* display: flex;
+    justify-content: start;
+    align-items: center; */
+    display: grid;
+    grid: 350px / auto;
+    place-items: start;
+    line-height: 50px;
+    width: 80vw;
+    height: 80vh;
+}
+
+section#sectionTop div.container div.container-avatar div.ava,
+div.name {
+    text-align: center;
+    padding: 20px 0;
+}
+
+section#sectionTop div.container div.container-avatar div.name {
+    position: relative;
+    top: -30px;
+    display: grid;
+    place-items: start;
+    align-self: center;
+    line-height: 2rem;
+    animation-name: example;
+    animation-duration: 5s;
+    transition: 3s;
+}
+
+@keyframes example {
+    from {
+        left: -50rem;
+        animation-timing-function: linear;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+
+/* ava */
+
+section#sectionTop div.container div.container-avatar div.ava img {
+    width: 218px;
+    height: 250px;
+    filter: sepia(30%);
+}
+
+
+/* animated border */
+
+section#sectionTop div.container div.container-avatar div.ava {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    width: 218px;
+    height: 250px;
+    overflow: hidden;
+    z-index: 0;
+    padding: 0.3rem;
+    align-self: center;
+    /* filter: blur(4px); */
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+section#sectionTop div.container div.container-avatar div.ava::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#4443A3, white, #4443A3, white), linear-gradient(#4443A3, white, #4443A3, white), linear-gradient(#4443A3, white, #4443A3, white), linear-gradient(#4443A3, white, #4443A3, white);
+    animation: rotate 6s linear infinite;
+}
+
+section#sectionTop div.container div.container-avatar div.ava::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background: #333;
+}
+
+
+/* end animated border */
+
+
+/* END ava */
+
+
+/* design strings */
+
+section#sectionTop div.container div.container-avatar div.name h1.top-container-name {
+    font-family: 'Gabriela', serif;
+    color: white;
+    font-size: 2vw;
+    text-shadow: 2px -2px 4px rgb(0, 0, 0), -3px 2px 5px rgba(0, 0, 0, 1);
+}
+
+section#sectionTop div.container div.container-avatar div.name p.dev {
+    font-family: 'Gabriela', serif;
+    color: #6c757d;
+    font-weight: 600;
+    font-size: 16px;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px rgb(255, 146, 19), 0 0 30px rgb(255, 146, 19), 0 0 40px rgb(255, 146, 19), 0 0 55px rgb(255, 146, 19), 0 0 75px rgb(255, 146, 19);
+}
+
+section#sectionTop div.container div.container-avatar div.name p.description-top {
+    font-family: 'Gabriela', serif;
+    color: whitesmoke;
+    text-shadow: 0 0 4px rgb(1, 1, 1);
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-top: 15px;
+    position: relative;
+    left: -40px;
+}
