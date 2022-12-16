@@ -1,4 +1,4 @@
-const container_top = document.querySelector('#colorBody');
+const container_top = document.querySelector('#container-top');
 for (var i = 1; i <= 100; i++) {
     const blocks = document.createElement('div');
     blocks.classList.add('block');
@@ -19,6 +19,8 @@ function generate() {
         }
     })
 }
+
+
 var btn_generator = document.getElementById('GenerateButton');
 var count = 1;
 btn = setInterval(function() {

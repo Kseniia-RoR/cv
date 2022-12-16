@@ -21,13 +21,9 @@
 
 body#colorBody {
     position: relative;
-    background-color: #2d2c6c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: white;
     font-family: var(--font-main);
-    z-index: 1;
-    overflow: hidden;
+    z-index: -3;
     width: 100vw;
     height: 100vh;
 }
@@ -35,6 +31,19 @@ body#colorBody {
 section#sectionTop {
     width: 100vw;
     height: 100vh;
+    background-color: #2d2c6c;
+    z-index: -2;
+}
+
+div#container-top {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    /* overflow: hidden; */
 }
 
 section#sectionTop nav.navbar-mine ul.sidenav button.button-outline-animate {
@@ -51,21 +60,22 @@ section#sectionTop nav.navbar-mine ul.sidenav button.button-outline-animate {
     position: absolute;
     top: 0.4rem;
     right: 10rem;
-    transition: all 0.3s;
+    transition: 3s;
     font-family: 'Open Sans Condensed', sans-serif;
+    z-index: 2;
 }
 
 section#sectionTop nav.navbar-mine ul.sidenav button.button-outline-animate:hover {
     color: rgba(68, 68, 68, 0.9);
     background-color: rgba(255, 255, 255, 0.287);
-    border-top: 1px solid rgba(68, 68, 68, 0.9);
-    border-bottom: 1px solid rgba(68, 68, 68, 0.9);
+    border-top: 1px double rgba(68, 68, 68, 0.9);
+    border-bottom: 1px double rgba(68, 68, 68, 0.9);
     width: 240px;
     height: 24px;
     margin-left: 15px;
     right: 9rem;
     z-index: 2;
-    transition: all 0.3s;
+    transition: 1s;
     letter-spacing: 2px;
 }
 
@@ -74,7 +84,7 @@ section#sectionTop nav.navbar-mine ul.sidenav button.button-outline-animate:hove
 
 div.block {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     width: 50px;
     height: 50px;
     background: rgba(255, 255, 255, 0.391);
@@ -104,7 +114,7 @@ section#sectionTop nav.navbar-mine {
     padding: 0;
     width: 100vw;
     height: 49px;
-    z-index: 1;
+    z-index: 2;
 }
 
 section#sectionTop nav.navbar-mine ul.sidenav {

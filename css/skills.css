@@ -1,0 +1,8 @@
+section#sectionSkills {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}

@@ -1,3 +1,25 @@
+.custom-shape-divider-bottom-1671149243 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1671149243 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1671149243 .shape-fill {
+    fill: #FFFFFF;
+}
+
 section#sectionTop div.container {
     width: 100vw;
     height: 100vh;
@@ -6,13 +28,11 @@ section#sectionTop div.container {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
+    z-index: 1;
 }
 
 section#sectionTop div.container div.container-avatar {
     position: relative;
-    /* display: flex;
-    justify-content: start;
-    align-items: center; */
     display: grid;
     grid: 350px / auto;
     place-items: start;
@@ -22,23 +42,25 @@ section#sectionTop div.container div.container-avatar {
 }
 
 section#sectionTop div.container div.container-avatar div.ava,
-div.name {
+div.my-name {
     text-align: center;
     padding: 20px 0;
 }
 
-section#sectionTop div.container div.container-avatar div.name {
+section#sectionTop div.container div.container-avatar div.my-name {
     position: relative;
     top: -30px;
     display: grid;
     place-items: start;
     align-self: center;
     line-height: 2rem;
-    animation-name: example;
-    animation-duration: 5s;
-    transition: 3s;
+    /* animation-name: example;
+    animation-duration: 3s; 
+    transition: 3s;*/
 }
 
+
+/* 
 @keyframes example {
     from {
         left: -50rem;
@@ -47,7 +69,7 @@ section#sectionTop div.container div.container-avatar div.name {
     to {
         left: 0px;
     }
-}
+} */
 
 
 /* ava */
@@ -71,6 +93,8 @@ section#sectionTop div.container div.container-avatar div.ava {
     z-index: 0;
     padding: 0.3rem;
     align-self: center;
+    transform: scale3d(0.1, 0.1, 0.1);
+    transition: 3s;
     /* filter: blur(4px); */
 }
 
@@ -114,14 +138,14 @@ section#sectionTop div.container div.container-avatar div.ava::after {
 
 /* design strings */
 
-section#sectionTop div.container div.container-avatar div.name h1.top-container-name {
+section#sectionTop div.container div.container-avatar div.my-name h1.top-container-name {
     font-family: 'Gabriela', serif;
     color: white;
     font-size: 2vw;
     text-shadow: 2px -2px 4px rgb(0, 0, 0), -3px 2px 5px rgba(0, 0, 0, 1);
 }
 
-section#sectionTop div.container div.container-avatar div.name p.dev {
+section#sectionTop div.container div.container-avatar div.my-name p.dev {
     font-family: 'Gabriela', serif;
     color: #6c757d;
     font-weight: 600;
@@ -129,7 +153,7 @@ section#sectionTop div.container div.container-avatar div.name p.dev {
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px rgb(255, 146, 19), 0 0 30px rgb(255, 146, 19), 0 0 40px rgb(255, 146, 19), 0 0 55px rgb(255, 146, 19), 0 0 75px rgb(255, 146, 19);
 }
 
-section#sectionTop div.container div.container-avatar div.name p.description-top {
+section#sectionTop div.container div.container-avatar div.my-name p.description-top {
     font-family: 'Gabriela', serif;
     color: whitesmoke;
     text-shadow: 0 0 4px rgb(1, 1, 1);
