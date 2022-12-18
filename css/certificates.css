@@ -209,34 +209,107 @@ section#sectionCertificate div.container-certificate .row-boxes .container .over
 
 section#sectionCertificate div.container-certificate .row-boxes .container div.div-btn {
     position: absolute;
-    display: grid;
+    display: flex;
+    grid-gap: 20px;
     top: 13rem;
     right: 3rem;
 }
 
+section#sectionCertificate div.container-certificate .row-boxes .container div.div-btn:nth-of-type(1) {
+    flex-grow: 1;
+}
+
+section#sectionCertificate div.container-certificate .row-boxes .container div.div-btn div.verify {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+section#sectionCertificate div.container-certificate .row-boxes .container div.div-btn div.verify a.verify {
+    border: solid 3px #4443A3;
+    color: #4443A3;
+    background-color: transparent;
+    -webkit-box-shadow: 2px 2px 9px 0px #0B325E, 2px 2px 9px 0px rgba(255, 255, 255, 0.73);
+    box-shadow: 2px 2px 9px 0px #0B325E, 2px 2px 9px 0px rgba(255, 255, 255, 0.73);
+    font-weight: bold;
+    position: relative;
+    z-index: 7;
+    top: -230px;
+    right: -130px;
+}
+
+section#sectionCertificate div.container-certificate .row-boxes .container div.div-btn div.verify a.verify:hover {
+    color: whitesmoke;
+    background-color: #4443A3;
+    padding: 2px 14px;
+}
+
 section#sectionCertificate div.container-certificate .row-boxes .container:nth-child(7) div.div-btn {
     top: 10rem;
+    display: grid;
+    grid-gap: 0;
 }
 
 section#sectionCertificate div.container-certificate .row-boxes .container a {
     width: 5rem;
     height: 2rem;
     border-radius: 5px;
-    border: 2px solid #4688FB;
+    background-color: transparent;
+    color: #4443A3;
+    border: 3px solid #4443A3;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: bold;
     text-decoration: none;
-    background-color: #4688FB;
-    color: whitesmoke;
     margin-top: 1rem;
     align-items: center;
     display: flex;
     justify-content: center;
+    transition: 0.5s;
+    -webkit-box-shadow: 2px 2px 9px 0px #0B325E, 2px 2px 9px 0px rgba(255, 255, 255, 0.73);
+    box-shadow: 2px 2px 9px 0px #0B325E, 2px 2px 9px 0px rgba(255, 255, 255, 0.73);
 }
 
 section#sectionCertificate div.container-certificate .row-boxes .container a:hover {
-    background-color: whitesmoke;
-    color: #4688FB;
-    border: 2px solid #4688FB;
-    /* transition: 1s; */
+    background-color: #4443A3;
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+
+/* animate */
+
+section#sectionCertificate div.container-certificate .row-boxes .container a:hover i {
+    /*   positioning */
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
+    width: 15%;
+    height: 100%;
+    transform: skew(-10deg, 0deg);
+    /*  animating it  */
+    animation: move 2s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+    5% {
+        opacity: 0.0;
+    }
+    48% {
+        opacity: 0.2;
+    }
+    80% {
+        opacity: 0.0;
+    }
+    100% {
+        left: 92%;
+    }
 }
