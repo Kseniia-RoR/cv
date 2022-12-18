@@ -22,7 +22,7 @@
 
 section#sectionCertificate {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     z-index: -3;
     position: relative;
     display: flex;
@@ -312,4 +312,26 @@ section#sectionCertificate div.container-certificate .row-boxes .container a:hov
     100% {
         left: 92%;
     }
+}
+
+.custom-shape-divider-bottom-1671397017 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1671397017 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1671397017 .shape-fill {
+    fill: #FFFFFF;
 }
