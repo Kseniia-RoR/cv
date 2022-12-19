@@ -67,6 +67,7 @@ section#sectionSkills div.container-skills div.row-skills-boxes div.skill-title 
 section#sectionSkills div.container-skills div.row-skills-boxes div.list-hard p {
     font-size: 18px;
     padding-left: 25px;
+    color: #033387;
 }
 
 
@@ -78,6 +79,7 @@ section#sectionSkills div.container-skills div.row-skills-boxes div.list-hard p 
 section#sectionSkills div.container-skills div.row-skills-boxes div.list-basic p {
     font-size: 18px;
     padding-left: 25px;
+    color: #033387;
 }
 
 
@@ -89,6 +91,7 @@ section#sectionSkills div.container-skills div.row-skills-boxes div.list-basic p
 section#sectionSkills div.container-skills div.row-skills-boxes div.list-familiar p {
     font-size: 18px;
     padding-left: 25px;
+    color: #033387;
 }
 
 
