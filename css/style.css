@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&EB+Garamond:ital@0;1&Dancing+Script&family=Permanent+Marker&family=Poppins&family=Raleway:wght@200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&EB+Garamond:ital@0;1&Dancing+Script&family=Permanent+Marker&family=Poppins&family=Raleway:wght@200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
@@ -168,3 +168,68 @@ section#sectionTop nav.navbar-mine ul.sidenav li a:hover.active {
 
 
 /* END navbar */
+
+
+/* footer */
+
+footer {
+    box-sizing: border-box;
+    height: 16rem;
+    width: 100vw;
+    background-color: rgba(245, 245, 245, 0.56);
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+    overflow: hidden;
+    padding-left: 6rem;
+    padding-top: 6rem;
+}
+
+footer div.row-footer {
+    display: flex;
+    gap: 6rem;
+}
+
+footer div.row-footer div.point {
+    width: 60px;
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+    color: #0dcaf0;
+    position: relative;
+    top: -1.5rem;
+}
+
+footer div.row-footer div.point a {
+    text-decoration: none;
+}
+
+footer div.row-footer div.point span {
+    position: relative;
+    top: -12px;
+    font-family: var(--font-brand);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+footer div.row-footer div.point a.btn-info-mine ion-icon {
+    color: #0dcaf0;
+    font-size: 3rem;
+}
+
+footer div.row-footer div.items-footer span.footer-item {
+    margin: 0.5rem;
+}
+
+footer div.row-footer div.items-footer span.footer-item a {
+    text-decoration: none;
+}
+
+footer div.row-copyright p {
+    font-family: 'Gabriela', serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+/* end footer */

@@ -10,7 +10,7 @@
     section#sectionProjects div.projects {
         padding: 10px;
         width: 100vw;
-        height: 40rem;
+        height: 33rem;
     }
     
     section#sectionProjects div.projects div.row-projects-title {
@@ -19,7 +19,7 @@
         justify-content: center;
         text-align: center;
         position: relative;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
     
     section#sectionProjects div.projects div.row-projects-title p.title-projects {
