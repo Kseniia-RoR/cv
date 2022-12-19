@@ -220,6 +220,7 @@ footer div.row-footer div.point span {
     font-family: var(--font-brand);
     font-weight: 400;
     font-size: 24px;
+    text-shadow: 2px 2px 2px #ababab;
 }
 
 footer div.row-footer div.point a.btn-info-mine ion-icon {
@@ -239,6 +240,7 @@ footer div.row-copyright p {
     font-family: 'Gabriela', serif;
     font-size: 16px;
     letter-spacing: 1px;
+    text-shadow: 2px 2px 2px #ababab;
 }
 
 

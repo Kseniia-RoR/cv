@@ -43,16 +43,17 @@ section#sectionCertificate div.container-certificate div.row-certificate-title {
     justify-content: center;
     text-align: center;
     position: relative;
-    top: 6rem;
+    top: 8rem;
 }
 
-section#sectionCertificate div.container-certificate div.row-certificate-title p.name-hi {
+section#sectionCertificate div.container-certificate div.row-certificate-title h1.name-hi {
     font-size: 2rem;
     font-weight: bold;
     color: white;
+    text-shadow: 2px 2px 2px whitesmoke;
 }
 
-section#sectionCertificate div.container-certificate div.row-certificate-title p.name-hi span {
+section#sectionCertificate div.container-certificate div.row-certificate-title h1.name-hi span {
     font-size: 5rem;
     font-family: 'Gabriola', cursive;
 }

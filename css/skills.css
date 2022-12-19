@@ -1,8 +1,172 @@
-#sectionSkills {
+@import url('https://fonts.googleapis.com/css2?family=Sofia&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Fauna+One&family=Sofia&display=swap');
+section#sectionSkills {
     width: 100vw;
     height: 100vh;
     z-index: 1;
     position: relative;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
+}
+
+section#sectionSkills div.container-skills {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
+section#sectionSkills div.container-skills div.row-skills-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: -3rem;
+}
+
+section#sectionSkills div.container-skills div.row-skills-title h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #ababab;
+}
+
+section#sectionSkills div.container-skills div.row-skills-title h1 span {
+    font-size: 5rem;
+    font-family: 'Sofia', cursive;
+}
+
+section#sectionSkills div.container-skills div.row-skills-boxes {
+    position: relative;
+    display: grid;
+    grid-template-columns: 20% 45% 35%;
+    grid-template-rows: 80px 30rem;
+    gap: 2px;
+    padding: 2px;
+    height: 32rem;
+}
+
+section#sectionSkills div.container-skills div.row-skills-boxes div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    font-family: 'Fauna One', serif;
+}
+
+section#sectionSkills div.container-skills div.row-skills-boxes div.skill-title {
+    text-align: left;
+    font-family: 'Sofia', cursive;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+
+
+/*  list-hard */
+
+section#sectionSkills div.container-skills div.row-skills-boxes div.list-hard ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 25px;
+}
+
+section#sectionSkills div.container-skills div.row-skills-boxes div.list-hard p {
+    font-size: 18px;
+    padding-left: 25px;
+}
+
+section#sectionSkills div.container-skills div.row-skills-boxes div.list-hard ul li {
+    padding-left: 16px;
+    font-size: 14px;
+    line-height: 20px !important;
+}
+
+section#sectionSkills div.container-skills div.row-skills-boxes div.list-hard ul li::before {
+    content: "";
+    padding-right: 8px;
+}
+
+
+/*  END list-hard */
+
+
+/*  list-basic */
+
+section#sectionSkills div.container-skills div.row-skills-boxes div.list-basic ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 25px;
+}
+
+section#sectionSkills div.container-skills div.row-skills-boxes div.list-basic p {
+    font-size: 18px;
+    padding-left: 25px;
+}
+
+section#sectionSkills div.container-skills div.row-skills-boxes div.list-basic ul li {
+    padding-left: 16px;
+    font-size: 14px;
+    line-height: 20px !important;
+}
+
+section#sectionSkills div.container-skills div.row-skills-boxes div.list-basic ul li::before {
+    content: "";
+    padding-right: 8px;
+}
+
+
+/*  END list-basic */
+
+
+/*  list-familiar */
+
+section#sectionSkills div.container-skills div.row-skills-boxes div.list-familiar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 25px;
+}
+
+section#sectionSkills div.container-skills div.row-skills-boxes div.list-familiar p {
+    font-size: 18px;
+    padding-left: 25px;
+}
+
+section#sectionSkills div.container-skills div.row-skills-boxes div.list-familiar ul li {
+    padding-left: 16px;
+    font-size: 14px;
+    line-height: 20px !important;
+}
+
+section#sectionSkills div.container-skills div.row-skills-boxes div.list-familiar ul li::before {
+    content: "";
+    padding-right: 8px;
+}
+
+
+/*  END list-familiar */
+
+.skills-ability {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* grid-template-rows: 80px 30rem; */
+    gap: 2px;
+    background-color: #dee1e3;
+    padding: 2px;
+}
+
+.skills-ability div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    font-family: 'Trirong', serif;
+}
+
+
+/* color text */
+
+.text-muted-mine {
+    color: #525354;
 }
