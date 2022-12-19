@@ -55,6 +55,8 @@
 </head>
 
 <body id="colorBody">
+    <div id="progress"></div>
+
     <div id="container-top"></div>
     <section id="sectionTop">
 
@@ -78,14 +80,14 @@
         </div>
     </section>
     <section id="sectionSkills">
-        <div w3-include-html="snippets/skills.html" class="container section-skills"></div>
+        <div w3-include-html="snippets/skills.html" class="container-skills section-skills"></div>
     </section>
     <section id="sectionCertificate" w3-include-html="snippets/certificates.html"></section>
 
     <section id="sectionProjects">
         <div class="projects">
             <div class="row-projects-title">
-                <p class="title-projects">Projects</p>
+                <p class="title-projects"><span>P</span>rojects</p>
             </div>
             <div class="main-carousel">
                 <div class="carousel-cell">
@@ -123,7 +125,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="carousel-cell"> <img src="imgs/examples/app-search-books-rails.jpeg " class="carousel-imgs " alt="... ">
+                <div class="carousel-cell"> <img src="imgs/examples/app-search-books-rails.jpeg" class="carousel-imgs " alt="... ">
                 </div>
                 <div class="carousel-cell">
                     <a href="https://kseniiamarkiv.github.io/qr-code/first-var/" target="_blank"><img src="imgs/examples/qr-code.jpg" class="carousel-imgs" alt="QR Code Generator">
@@ -166,13 +168,11 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-    <script>
-        includeHTML();
-    </script>
-
     <script src="js/lib/anime.min.js "></script>
     <script src="js/reload.js "></script>
     <script src="js/carousel.js"></script>
+    <script src="js/scroll.js"></script>
+
     <script>
         $('.main-carousel').flickity({
             // options
@@ -182,7 +182,9 @@
             freeScroll: true
         });
     </script>
-
+    <script>
+        includeHTML();
+    </script>
 </body>
 
 </html>

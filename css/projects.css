@@ -1,136 +1,141 @@
-    section#sectionProjects {
-        width: 100vw;
-        height: auto;
-        z-index: 1;
-        position: relative;
-        display: flex;
-        justify-content: center;
-    }
-    
-    section#sectionProjects div.projects {
-        padding: 10px;
-        width: 100vw;
-        height: 33rem;
-    }
-    
-    section#sectionProjects div.projects div.row-projects-title {
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        position: relative;
-        margin-bottom: 3rem;
-    }
-    
-    section#sectionProjects div.projects div.row-projects-title p.title-projects {
-        font-size: 2rem;
-        font-weight: bold;
-        color: black;
-    }
-    
-    section#sectionProjects div.projects div.main-carousel div.carousel-cell {
-        width: 66%;
-        height: 350px;
-        margin-right: 10px;
-        counter-increment: gallery-cell;
-        border-radius: 8px;
-    }
-    /* cell number */
-    
-    section#sectionProjects div.projects div.main-carousel div.carousel-cell:before {
-        display: block;
-        text-align: center;
-        content: counter(gallery-cell);
-        line-height: 0px;
-    }
-    
-    section#sectionProjects div.projects div.main-carousel div.carousel-cell img {
-        display: block;
-        width: 100%;
-        height: 350px;
-        object-fit: cover;
-        transition: 2s;
-    }
-    
-    section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(245, 245, 245, 0.6);
-        color: black;
-        overflow: hidden;
-        width: 100%;
-        height: 30%;
-        display: flex;
-        justify-content: start;
-        align-content: center;
-        flex-wrap: wrap;
-        font-family: 'Gabriela', serif;
-    }
-    
-    section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay div.text {
-        margin-left: 1rem;
-    }
-    
-    section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay div.text p {
-        margin-left: 2rem;
-    }
-    
-    section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay div.text h5 {
-        margin-bottom: 10px;
-    }
-    
-    section#sectionProjects div.projects div.main-carousel div.carousel-cell img:hover {
-        transform: scale3d(1.3, 1.3, 1.3);
-        transition: 1s;
-    }
-    
-    section#sectionProjects div.projects div.main-carousel div.carousel-cell:hover {
-        border: 2px solid #FAF643;
-        transition: 1s;
-    }
-    /* design flickity */
-    
-    .flickity-prev-next-button.next {
-        right: 70px!important;
-        border: 2px solid #FAF643;
-        color: #FAF643;
-    }
-    
-    .flickity-prev-next-button.previous {
-        left: 70px!important;
-        border: 2px solid #FAF643;
-        color: #FAF643;
-    }
-    
-    .flickity-page-dots {
-        bottom: -44px!important;
-    }
-    
-    .flickity-page-dots .dot {
-        width: 1rem!important;
-        height: 1rem!important;
-        background: #4688FB!important;
-    }
-    /* END design flickity */
-    /********** Large devices only **********/
-    
-    @media (min-width: 992px) and (max-width: 1199px) {
-        section#sectionProjects div.projects div.main-carousel div.carousel-cell {
-            width: 45%;
-            height: 350px;
-            margin: 0 15px;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        section#sectionProjects div.projects div.main-carousel div.carousel-cell img {
-            width: 100%;
-            height: 350px;
-            object-fit: cover;
-        }
-    }
-    
+section#sectionProjects {
+    width: 100vw;
+    height: auto;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+section#sectionProjects div.projects {
+    padding: 10px;
+    width: 100vw;
+    height: 38rem;
+}
+
+section#sectionProjects div.projects div.row-projects-title {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 3rem;
+    top: -3rem;
+}
+
+section#sectionProjects div.projects div.row-projects-title p.title-projects {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+section#sectionProjects div.projects div.row-projects-title p.title-projects span {
+    font-size: 5rem;
+    font-family: 'Gabriola', cursive;
+}
+
+section#sectionProjects div.projects div.main-carousel {
+    position: relative;
+    top: -3rem;
+}
+
+section#sectionProjects div.projects div.main-carousel div.carousel-cell {
+    width: 66%;
+    height: 350px;
+    margin-right: 10px;
+    counter-increment: gallery-cell;
+    border-radius: 8px;
+}
+
+
+/* cell number */
+
+section#sectionProjects div.projects div.main-carousel div.carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 0px;
+}
+
+section#sectionProjects div.projects div.main-carousel div.carousel-cell img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: 2s;
+}
+
+section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(245, 245, 245, 0.6);
+    color: black;
+    overflow: hidden;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    flex-wrap: wrap;
+    font-family: 'Gabriela', serif;
+}
+
+section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay div.text {
+    margin-left: 1rem;
+}
+
+section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay div.text p {
+    margin-left: 2rem;
+}
+
+section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay div.text h5 {
+    margin-bottom: 10px;
+}
+
+section#sectionProjects div.projects div.main-carousel div.carousel-cell img:hover {
+    transform: scale3d(1.3, 1.3, 1.3);
+    transition: 1s;
+}
+
+section#sectionProjects div.projects div.main-carousel div.carousel-cell:hover {
+    border: 2px solid #FAF643;
+    transition: 1s;
+}
+
+
+/* design flickity */
+
+.flickity-prev-next-button.next {
+    right: 70px!important;
+    border: 2px solid #FAF643;
+    color: #FAF643;
+}
+
+.flickity-prev-next-button.previous {
+    left: 70px!important;
+    border: 2px solid #FAF643;
+    color: #FAF643;
+}
+
+.flickity-page-dots {
+    bottom: -5rem!important;
+}
+
+.flickity-page-dots .dot {
+    width: 1rem!important;
+    height: 1rem!important;
+    background: #4688FB!important;
+}
+
+
+/* END design flickity */
+
+
+/********** Large devices only **********/
+
+@media (min-width: 992px) and (max-width: 1199px) {
     section#sectionProjects div.projects div.main-carousel div.carousel-cell {
         width: 45%;
         height: 350px;
@@ -138,77 +143,101 @@
         overflow: hidden;
         border-radius: 8px;
     }
-    
     section#sectionProjects div.projects div.main-carousel div.carousel-cell img {
         width: 100%;
         height: 350px;
         object-fit: cover;
     }
-    /* end examples */
-    /********** Medium devices only **********/
-    
-    @media screen and (max-width: 991px) {
-        section#sectionProjects div.projects div.main-carousel div.carousel-cell {
-            width: 35%;
-            height: 250px;
-            margin: 0 15px;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        section#sectionProjects div.projects div.main-carousel div.carousel-cell img {
-            width: 100%;
-            height: 350px;
-            object-fit: cover;
-        }
-        section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay {
-            height: 40%;
-        }
-        section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay div.text p,
-        .blue-text,
-        .gray-text {
-            font-size: 10px;
-        }
+}
+
+section#sectionProjects div.projects div.main-carousel div.carousel-cell {
+    width: 45%;
+    height: 350px;
+    margin: 0 15px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+section#sectionProjects div.projects div.main-carousel div.carousel-cell img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+
+/* end examples */
+
+
+/********** Medium devices only **********/
+
+@media screen and (max-width: 991px) {
+    section#sectionProjects div.projects div.main-carousel div.carousel-cell {
+        width: 35%;
+        height: 250px;
+        margin: 0 15px;
+        overflow: hidden;
+        border-radius: 8px;
     }
-    /********** Small devices only **********/
-    
-    @media screen and (max-width: 767px) {
-        section#sectionProjects div.projects div.main-carousel div.carousel-cell {
-            width: 100%;
-            height: 350px;
-            margin: 0 15px;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        section#sectionProjects div.projects div.main-carousel div.carousel-cell img {
-            width: 90%;
-            height: 350px;
-            object-fit: cover;
-            padding-left: 4rem;
-        }
+    section#sectionProjects div.projects div.main-carousel div.carousel-cell img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
     }
-    /*********** Extra small devices only  ***********/
-    
-    @media only screen and (max-width: 300px) {
-        section#sectionProjects div.projects div.main-carousel div.carousel-cell {
-            width: 100%;
-            height: 350px;
-            margin: 0 15px;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        section#sectionProjects div.projects div.main-carousel div.carousel-cell img {
-            width: 90%;
-            height: 350px;
-            object-fit: cover;
-            padding-left: 3rem;
-        }
+    section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay {
+        height: 40%;
     }
-    /* text color */
-    
-    .blue-text {
-        color: #4688FB;
-    }
-    
+    section#sectionProjects div.projects div.main-carousel div.carousel-cell a div.overlay div.text p,
+    .blue-text,
     .gray-text {
-        color: #5a5858;
+        font-size: 10px;
     }
+}
+
+
+/********** Small devices only **********/
+
+@media screen and (max-width: 767px) {
+    section#sectionProjects div.projects div.main-carousel div.carousel-cell {
+        width: 100%;
+        height: 350px;
+        margin: 0 15px;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    section#sectionProjects div.projects div.main-carousel div.carousel-cell img {
+        width: 90%;
+        height: 350px;
+        object-fit: cover;
+        padding-left: 4rem;
+    }
+}
+
+
+/*********** Extra small devices only  ***********/
+
+@media only screen and (max-width: 300px) {
+    section#sectionProjects div.projects div.main-carousel div.carousel-cell {
+        width: 100%;
+        height: 350px;
+        margin: 0 15px;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    section#sectionProjects div.projects div.main-carousel div.carousel-cell img {
+        width: 90%;
+        height: 350px;
+        object-fit: cover;
+        padding-left: 3rem;
+    }
+}
+
+
+/* text color */
+
+.blue-text {
+    color: #4688FB;
+}
+
+.gray-text {
+    color: #5a5858;
+}
