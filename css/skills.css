@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Fauna+One&family=Sofia&display=swap');
 section#sectionSkills {
     width: 100vw;
-    height: 100vh;
+    height: 58rem;
     z-index: 1;
     position: relative;
     display: flex;
@@ -64,27 +64,9 @@ section#sectionSkills div.container-skills div.row-skills-boxes div.skill-title 
 
 /*  list-hard */
 
-section#sectionSkills div.container-skills div.row-skills-boxes div.list-hard ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    padding-left: 25px;
-}
-
 section#sectionSkills div.container-skills div.row-skills-boxes div.list-hard p {
     font-size: 18px;
     padding-left: 25px;
-}
-
-section#sectionSkills div.container-skills div.row-skills-boxes div.list-hard ul li {
-    padding-left: 16px;
-    font-size: 14px;
-    line-height: 20px !important;
-}
-
-section#sectionSkills div.container-skills div.row-skills-boxes div.list-hard ul li::before {
-    content: "";
-    padding-right: 8px;
 }
 
 
@@ -93,27 +75,9 @@ section#sectionSkills div.container-skills div.row-skills-boxes div.list-hard ul
 
 /*  list-basic */
 
-section#sectionSkills div.container-skills div.row-skills-boxes div.list-basic ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    padding-left: 25px;
-}
-
 section#sectionSkills div.container-skills div.row-skills-boxes div.list-basic p {
     font-size: 18px;
     padding-left: 25px;
-}
-
-section#sectionSkills div.container-skills div.row-skills-boxes div.list-basic ul li {
-    padding-left: 16px;
-    font-size: 14px;
-    line-height: 20px !important;
-}
-
-section#sectionSkills div.container-skills div.row-skills-boxes div.list-basic ul li::before {
-    content: "";
-    padding-right: 8px;
 }
 
 
@@ -122,51 +86,75 @@ section#sectionSkills div.container-skills div.row-skills-boxes div.list-basic u
 
 /*  list-familiar */
 
-section#sectionSkills div.container-skills div.row-skills-boxes div.list-familiar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    padding-left: 25px;
-}
-
 section#sectionSkills div.container-skills div.row-skills-boxes div.list-familiar p {
     font-size: 18px;
     padding-left: 25px;
 }
 
-section#sectionSkills div.container-skills div.row-skills-boxes div.list-familiar ul li {
-    padding-left: 16px;
-    font-size: 14px;
-    line-height: 20px !important;
-}
-
-section#sectionSkills div.container-skills div.row-skills-boxes div.list-familiar ul li::before {
-    content: "";
-    padding-right: 8px;
-}
-
 
 /*  END list-familiar */
 
-.skills-ability {
+
+/* skills-ability */
+
+section#sectionSkills div.container-skills div.skills-ability {
+    width: 100%;
     position: relative;
     display: grid;
-    grid-template-columns: 50% 50%;
-    /* grid-template-rows: 80px 30rem; */
-    gap: 2px;
+    grid-template-columns: 40% 60%;
     background-color: #dee1e3;
-    padding: 2px;
 }
 
-.skills-ability div {
+section#sectionSkills div.container-skills div.skills-ability div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: left;
     font-family: 'Trirong', serif;
 }
+
+section#sectionSkills div.container-skills div.skills-ability div p {
+    font-size: 18px;
+}
+
+
+/* END skills-ability */
 
 
 /* color text */
 
 .text-muted-mine {
     color: #525354;
+}
+
+
+/* COMMON DESIGN */
+
+ul.skills,
+ul.nested-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 25px;
+}
+
+ul.skills li {
+    padding-left: 16px;
+    font-size: 14px;
+    line-height: 20px !important;
+}
+
+ul.skills li::before {
+    content: "";
+    padding-right: 8px;
+}
+
+ul.nested-list li::before {
+    content: "*";
+    padding-right: 8px;
+    color: #4688FB;
+}
+
+.ability-desc {
+    font-size: 6rem;
+    font-family: 'Gabriola', cursive;
+    color: #4688FB;
 }
