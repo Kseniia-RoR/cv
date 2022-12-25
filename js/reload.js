@@ -4,6 +4,8 @@ for (var i = 1; i <= 100; i++) {
     blocks.classList.add('block');
     container_top.appendChild(blocks);
 }
+var screenWidth = window.innerWidth;
+var screenheight = window.innerHeight;
 
 function generate() {
     anime({
@@ -20,9 +22,9 @@ function generate() {
     })
 }
 
-
 var btn_generator = document.getElementById('GenerateButton');
 var count = 1;
+
 btn = setInterval(function() {
     btn_generator.click();
     if (count >= 3) clearInterval(btn);

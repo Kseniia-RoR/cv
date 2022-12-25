@@ -3,7 +3,6 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
 }
@@ -20,15 +19,34 @@
     fill: #FFFFFF;
 }
 
+section#sectionTop {
+    position: relative;
+    max-width: 100vw;
+    height: 47rem;
+    background-color: #2d2c6c;
+    /* z-index: 1; */
+    overflow: hidden;
+}
+
+div#container-top {
+    position: absolute;
+    width: 100%;
+    height: 47rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+
 section#sectionTop div.container {
     width: 100vw;
-    height: 100vh;
+    height: 47rem;
     position: relative;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    z-index: 1;
+    z-index: 2;
 }
 
 section#sectionTop div.container div.container-avatar {
@@ -38,7 +56,6 @@ section#sectionTop div.container div.container-avatar {
     place-items: start;
     line-height: 50px;
     width: 80vw;
-    height: 80vh;
 }
 
 section#sectionTop div.container div.container-avatar div.ava,
@@ -49,7 +66,7 @@ div.my-name {
 
 section#sectionTop div.container div.container-avatar div.my-name {
     position: relative;
-    top: -30px;
+    /* top: -30px; */
     display: grid;
     place-items: start;
     align-self: center;
@@ -87,8 +104,8 @@ section#sectionTop div.container div.container-avatar div.ava {
     position: relative;
     display: flex;
     justify-content: start;
-    width: 218px;
-    height: 250px;
+    width: 228px;
+    height: 260px;
     overflow: hidden;
     z-index: 0;
     padding: 0.3rem;
@@ -166,3 +183,117 @@ section#sectionTop div.container div.container-avatar div.my-name p.description-
     position: relative;
     left: -40px;
 }
+
+
+/* MEDIA QUERIES */
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media screen and (max-width: 1199px) {}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media screen and (max-width: 991px) {
+    section#sectionTop div.container div.container-avatar {
+        top: -4rem;
+    }
+    section#sectionTop div.container div.container-avatar div.my-name h1.top-container-name {
+        font-size: 4vw;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media screen and (max-width: 768px) {
+    section#sectionTop div.container div.container-avatar {
+        top: -4rem;
+    }
+}
+
+
+/* Extra-small devices (landscape phones, up to 576px) */
+
+@media screen and (max-width: 576px) {
+    section#sectionTop div.container {
+        justify-content: center;
+    }
+    section#sectionTop div.container div.container-avatar {
+        place-items: center;
+        width: 65vw;
+        top: -5rem;
+    }
+    section#sectionTop div.container div.container-avatar div.ava {
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        width: 230px;
+        height: 260px;
+    }
+    section#sectionTop div.container div.container-avatar div.my-name {
+        place-items: center;
+        align-self: center;
+        top: -6rem;
+    }
+    section#sectionTop div.container div.container-avatar div.my-name h1.top-container-name {
+        font-size: 4vw;
+        margin-top: 2rem;
+    }
+    section#sectionTop div.container div.container-avatar div.my-name p.dev {
+        font-size: 3vw;
+    }
+    section#sectionTop div.container div.container-avatar div.my-name p.description-top {
+        font-size: 3vw;
+        left: 0;
+        text-align: center;
+    }
+}
+
+
+/* xxs devices (phones, up to 395px) */
+
+@media screen and (max-width: 395px) {
+    section#sectionTop div.container {
+        justify-content: center;
+    }
+    section#sectionTop div.container div.container-avatar {
+        place-items: center;
+        width: 65vw;
+        top: -5rem;
+    }
+    section#sectionTop div.container div.container-avatar div.ava {
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        padding: 20px 0;
+        width: 208px;
+        height: 230px;
+    }
+    section#sectionTop div.container div.container-avatar div.my-name {
+        place-items: center;
+        align-self: center;
+    }
+    section#sectionTop div.container div.container-avatar div.my-name h1.top-container-name {
+        font-size: 6vw;
+    }
+    section#sectionTop div.container div.container-avatar div.my-name p.dev {
+        font-size: 3vw;
+    }
+    section#sectionTop div.container div.container-avatar div.my-name p.description-top {
+        font-size: 4vw;
+        left: 0;
+        text-align: center;
+    }
+    /* ava */
+    section#sectionTop div.container div.container-avatar div.ava img {
+        width: 200px;
+        height: 220px;
+        top: -14px;
+        position: relative;
+    }
+}
+
+
+/* end MEDIA QUERIES */

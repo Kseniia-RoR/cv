@@ -45,7 +45,7 @@
 
         function updateParticles() {
             ctx.clearRect(0, 0, width, height);
-            ctx.fillStyle = "#f6f9fa";
+            ctx.fillStyle = "#EDEDED";
 
             particles.forEach(function(particle) {
                 particle.y += particle.dy;

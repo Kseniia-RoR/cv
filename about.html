@@ -8,9 +8,8 @@
     <title>About me</title>
 
     <link rel="stylesheet" href="css/about.css" />
-    <link href="/css/imgs/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="imgs/favicon.ico" rel="icon" type="image/x-icon" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
@@ -18,20 +17,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
 
-
 </head>
 
 <body>
+
     <nav class="navbar-mine">
-        <ul class="sidenav">
-            <li class="remove-padding"><a href="index.html"><span>Home</span></a></li>
-            <li><a href="/about.html" class="active"><span>About</span></a></li>
+        <button class="button" id="btn">
+            <ion-icon name="menu-outline" size="large"></ion-icon>
+        </button>
+        <ul id="panel" class="sidenav">
+            <li><a href="index.html"><span>Home</span></a></li>
+            <li class="active"><a href="/about.html"><span>About</span></a></li>
             <li><a href="index.html#sectionSkills"><span>Skills</span></a></li>
-            <li><a href="index.html#sectionCertificate"><span>Certificates</span></a></li>
+            <li><a href="index.html#sectionCertificate" class="certificate"><span>Certificates</span></a></li>
             <li><a href="index.html#sectionExamples"><span>Projects</span></a></li>
             <li><a href="index.html#sectionContacts"><span>Contacts</span></a></li>
         </ul>
+
     </nav>
+
     <article class="container-about">
         <header>
             <h1 class="header-about">About me</h1>
@@ -56,9 +60,11 @@
 
     <section class="for-space"> </section>
 
-    <script type="module " src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js "></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js "></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/lazy-line-painter@1.9.4/lib/lazy-line-painter-1.9.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/about.js"></script>
 </body>
 
 </html>

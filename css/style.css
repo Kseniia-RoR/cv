@@ -3,7 +3,7 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
 * {
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -38,33 +38,13 @@ body#colorBody {
     z-index: 8;
 }
 
-section#sectionTop {
-    width: 100vw;
-    height: 100vh;
-    background-color: #2d2c6c;
-    z-index: -2;
-}
-
-div#container-top {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 4rem;
-    /* overflow: hidden; */
-}
-
-section#sectionTop nav.navbar-mine ul.sidenav button.button-outline-animate {
+section#sectionTop nav.navbar-mine button.button-outline-animate {
     background-color: transparent;
     background-color: #2d2c6c;
     font-size: 1rem;
     text-align: center;
     width: 200px;
-    height: 24px;
-    padding: 6px 12px;
-    margin-left: 15px;
+    height: 36px;
     color: white;
     border: 0;
     position: absolute;
@@ -72,19 +52,16 @@ section#sectionTop nav.navbar-mine ul.sidenav button.button-outline-animate {
     right: 10rem;
     transition: 3s;
     font-family: 'Open Sans Condensed', sans-serif;
-    z-index: 2;
+    z-index: 4;
 }
 
-section#sectionTop nav.navbar-mine ul.sidenav button.button-outline-animate:hover {
+section#sectionTop nav.navbar-mine button.button-outline-animate:hover {
     color: rgba(68, 68, 68, 0.9);
     background-color: rgba(255, 255, 255, 0.287);
     border-top: 1px double rgba(68, 68, 68, 0.9);
     border-bottom: 1px double rgba(68, 68, 68, 0.9);
     width: 240px;
-    height: 24px;
-    margin-left: 15px;
     right: 9rem;
-    z-index: 2;
     transition: 1s;
     letter-spacing: 2px;
 }
@@ -123,56 +100,65 @@ section#sectionTop nav.navbar-mine {
     margin-bottom: 0;
     padding: 0;
     width: 100vw;
-    height: 49px;
+    height: 50px;
     z-index: 2;
+    background-color: #f3f3f35d;
+}
+
+section#sectionTop nav.navbar-mine button.button {
+    display: none;
+    z-index: 3;
 }
 
 section#sectionTop nav.navbar-mine ul.sidenav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    /* border: 1px solid #e7e7e7; */
-    background-color: #f3f3f35d;
     width: 100vw;
     height: 50px;
 }
 
 section#sectionTop nav.navbar-mine ul.sidenav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     float: left;
-    padding: 0 16px 0 16px;
-    width: 100px;
-    height: 49px;
-}
-
-section#sectionTop nav.navbar-mine ul.sidenav li.remove-padding {
-    padding-left: 0;
+    width: auto;
+    height: 50px;
 }
 
 section#sectionTop nav.navbar-mine ul.sidenav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px 0 16px;
     text-decoration: none;
     width: 100px;
-    height: 49px;
 }
 
-section#sectionTop nav.navbar-mine ul.sidenav li a:hover:not(.active) {
+section#sectionTop nav.navbar-mine ul.sidenav li:hover:not(.active) {
     background-color: #ddd;
-    color: #666;
-    font-weight: 500;
 }
 
-section#sectionTop nav.navbar-mine ul.sidenav li a.active {
-    color: white;
+section#sectionTop nav.navbar-mine ul.sidenav li.active {
     background-color: #6664d5;
 }
 
-section#sectionTop nav.navbar-mine ul.sidenav li a:hover.active {
-    color: #666;
+section#sectionTop nav.navbar-mine ul.sidenav li:hover.active {
     background-color: whitesmoke;
+}
+
+section#sectionTop nav.navbar-mine ul.sidenav li:hover:not(.active) a {
+    color: #666;
+}
+
+section#sectionTop nav.navbar-mine ul.sidenav li.active a {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Rubik Gemstones', cursive;
+}
+
+section#sectionTop nav.navbar-mine ul.sidenav li:hover.active a {
+    color: #666;
     font-weight: 500;
 }
 
@@ -245,3 +231,234 @@ footer div.row-copyright p {
 
 
 /* end footer */
+
+
+/* MEDIA QUERIES */
+
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+
+@media screen and (max-width: 1599px) {
+    div#container-top {
+        overflow-y: hidden;
+    }
+    div#container-top::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media screen and (max-width: 1399px) {
+    /* navbar */
+    section#sectionTop nav.navbar-mine button.button-outline-animate {
+        right: 20rem;
+        width: 170px;
+    }
+    section#sectionTop nav.navbar-mine button.button-outline-animate:hover {
+        right: 18rem;
+        width: 190px;
+    }
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media screen and (max-width: 1199px) {
+    /* navbar */
+    section#sectionTop nav.navbar-mine button.button-outline-animate {
+        right: 7rem;
+        width: 170px;
+    }
+    section#sectionTop nav.navbar-mine button.button-outline-animate:hover {
+        right: 6rem;
+        width: 190px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media screen and (max-width: 991px) {
+    /* navbar */
+    section#sectionTop nav.navbar-mine button.button-outline-animate {
+        right: 3rem;
+        width: 170px;
+        transition: 2s;
+    }
+    section#sectionTop nav.navbar-mine button.button-outline-animate:hover {
+        right: 2rem;
+        width: 190px;
+        transition: 1s;
+    }
+    section#sectionTop nav.navbar-mine ul.sidenav li {
+        width: 80px;
+    }
+    section#sectionTop nav.navbar-mine ul.sidenav li a {
+        font-size: 12px;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media screen and (max-width: 768px) {
+    /* navbar */
+    section#sectionTop nav.navbar-mine {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        z-index: 3;
+    }
+    section#sectionTop nav.navbar-mine button.button-outline-animate {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        left: 3rem;
+        z-index: 4;
+        transition: 1s;
+    }
+    section#sectionTop nav.navbar-mine button.button-outline-animate:hover {
+        right: 5.5rem;
+        transition: 1s;
+    }
+    section#sectionTop nav.navbar-mine button.button {
+        width: 100vw;
+        height: 50px;
+        position: relative;
+        right: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        z-index: 3;
+    }
+    section#sectionTop nav.navbar-mine button.button ion-icon {
+        display: flex;
+        position: absolute;
+        right: 1rem;
+        color: white;
+        z-index: 3;
+    }
+    section#sectionTop nav.navbar-mine ul.sidenav {
+        display: none;
+        width: 100vw;
+        height: auto;
+    }
+    section#sectionTop nav.navbar-mine ul.sidenav li {
+        width: 100vw;
+        height: 50px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section#sectionTop nav.navbar-mine ul.sidenav li:hover {
+        background-color: rgba(245, 245, 245, 0.226);
+        font-weight: bold;
+        width: 100vw;
+        height: 50px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+    }
+    section#sectionTop nav.navbar-mine ul.sidenav li a {
+        width: 100vw;
+        color: white;
+        font-weight: 600;
+        transition: 0.5s;
+        font-size: 16px;
+    }
+    section#sectionTop nav.navbar-mine ul.sidenav li.active {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+    section#sectionTop nav.navbar-mine ul.sidenav li.active a {
+        width: 100vw;
+        transition: 0.5s;
+        text-transform: uppercase;
+        padding-left: 0;
+        left: -4px;
+        font-family: 'Rubik Gemstones', cursive;
+    }
+    /* END navbar */
+}
+
+
+/* Extra-small devices (landscape phones, up to 576px) */
+
+@media screen and (max-width: 576px) {
+    /* navbar */
+    section#sectionTop nav.navbar-mine button.button-outline-animate {
+        left: 2.5rem;
+        top: 0.3rem;
+        z-index: 4;
+        width: 100px;
+        height: 40px;
+        font-size: 1.4rem;
+    }
+    section#sectionTop nav.navbar-mine button.button-outline-animate:hover {
+        left: 2rem;
+        width: 120px;
+    }
+    section#sectionTop nav.navbar-mine ul.sidenav li a {
+        font-size: 16px;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+    footer div.row-footer {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+
+/* xxs devices (phones, up to 395px) */
+
+@media screen and (max-width: 395px) {
+    /* navbar */
+    section#sectionTop nav.navbar-mine button.button-outline-animate {
+        left: 2.5rem;
+        top: 0.3rem;
+        z-index: 4;
+        width: 100px;
+        height: 40px;
+        font-size: 1.4rem;
+    }
+    section#sectionTop nav.navbar-mine button.button-outline-animate:hover {
+        left: 2rem;
+        width: 120px;
+    }
+    section#sectionTop nav.navbar-mine ul.sidenav li {
+        font-size: 13px;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+    footer div.row-footer {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+
+/* end MEDIA QUERIES */

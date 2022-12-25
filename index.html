@@ -51,7 +51,6 @@
             }
         };
     </script>
-    <script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
 </head>
 
 <body id="colorBody">
@@ -60,15 +59,18 @@
     <div id="container-top"></div>
     <section id="sectionTop">
 
-        <nav class="navbar-mine">
-            <ul class="sidenav">
-                <li class="remove-padding"><a href="#" class="active"><span>Home</span></a></li>
+        <nav id="navbar" class="navbar-mine">
+            <button class="button" id="btn">
+                <ion-icon name="menu-outline" size="large"></ion-icon>
+            </button>
+            <button id='GenerateButton' class="button-outline-animate" onclick="generate();"><span>CLICK ME</span></button>
+            <ul id="panel" class="sidenav">
+                <li class="active"><a href="#"><span>Home</span></a></li>
                 <li><a href="/about.html" target="_blank"><span>About</span></a></li>
                 <li><a href="#sectionSkills"><span>Skills</span></a></li>
                 <li><a href="#sectionCertificate"><span>Certificates</span></a></li>
                 <li><a href="#sectionProjects"><span>Projects</span></a></li>
                 <li><a href="#sectionContacts"><span>Contacts</span></a></li>
-                <button id='GenerateButton' class="button-outline-animate" onclick="generate();">CLICK ME</button>
                 <li><a href="/blogs.html" target="_blank"><span>Blogs</span></a></li>
             </ul>
         </nav>
@@ -167,6 +169,8 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <script src="js/lib/anime.min.js "></script>
+    <script src="js/about.js"></script>
+
     <script src="js/reload.js "></script>
     <script src="js/carousel.js"></script>
     <script src="js/scroll.js"></script>
@@ -175,7 +179,7 @@
     <script>
         $('.main-carousel').flickity({
             // options
-            cellAlign: 'left',
+            // cellAlign: 'left',   - position left
             autoPlay: true,
             wrapAround: true,
             freeScroll: true

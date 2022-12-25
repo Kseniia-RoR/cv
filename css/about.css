@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+* {
+    box-sizing: border-box;
+}
+
 body {
     position: relative;
     font-family: 'Montserrat', sans-serif;
-    z-index: 1;
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -19,7 +23,11 @@ nav.navbar-mine {
     margin-bottom: 0;
     padding: 0;
     width: 100vw;
-    height: 49px;
+    height: 50px;
+}
+
+nav.navbar-mine button.button {
+    display: none;
 }
 
 nav.navbar-mine ul.sidenav {
@@ -31,14 +39,17 @@ nav.navbar-mine ul.sidenav {
 }
 
 nav.navbar-mine ul.sidenav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     float: left;
-    padding: 0 16px 0 16px;
-    width: 100px;
-    height: 49px;
+    width: auto;
+    height: 50px;
+    padding-right: 10px;
 }
 
-nav.navbar-mine ul.sidenav li.remove-padding {
-    padding-left: 0;
+nav.navbar-mine ul.sidenav li.active {
+    transition: 0.5s;
 }
 
 nav.navbar-mine ul.sidenav li a {
@@ -46,71 +57,59 @@ nav.navbar-mine ul.sidenav li a {
     color: #666;
     font-weight: 500;
     text-align: center;
-    padding: 14px 16px 0 16px;
     text-decoration: none;
     width: 100px;
-    height: 39px;
-    text-decoration: none;
     transition: 2s;
 }
 
-nav.navbar-mine ul.sidenav li a:hover:not(.active) {
-    color: #666;
-    font-weight: 500;
+nav.navbar-mine ul.sidenav li:hover:not(.active) a {
+    font-weight: 700;
     text-decoration: underline wavy #6664d5 4px;
-    transition: 1s;
+    transition: 0.5s;
     color: #6664d5;
 }
 
-nav.navbar-mine ul.sidenav li a.active {
-    color: white;
-    font-weight: 500;
-    animation: myfirst 9s linear infinite alternate;
-    transition: 1s;
+nav.navbar-mine ul.sidenav li.active a {
+    width: 150px;
+    font-size: 2rem;
+    animation: scale-active 9s infinite;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-family: 'Rubik Gemstones', cursive;
 }
 
-nav.navbar-mine ul.sidenav li a:hover.active {
+nav.navbar-mine ul.sidenav li:hover.active a {
     color: #666;
+    font-size: 2rem;
     font-weight: 500;
     animation: none;
-    text-decoration: underline wavy #6664d5 4px;
 }
 
-@keyframes myfirst {
+@keyframes scale-active {
     0% {
-        background-color: #2EA1DA;
-        color: white;
-        left: 0px;
-        top: 0px;
+        color: #2EA1DA;
         transition: 1s;
+        transform: scale(1.1);
     }
     25% {
-        background-color: #E83879;
-        color: white;
-        left: 200px;
-        top: 0px;
+        color: #E83879;
         transition: 1s;
+        transform: scale(1.2);
     }
     50% {
-        background-color: #FBB845;
-        color: white;
-        left: 200px;
-        top: 200px;
+        color: #FBB845;
         transition: 1s;
+        transform: scale(1.3);
     }
     75% {
-        background-color: #28f153;
-        color: white;
-        left: 0px;
-        top: 200px;
+        color: #28f153;
         transition: 1s;
+        transform: scale(1.2);
     }
     100% {
-        background-color: #4443A3;
-        color: white;
-        left: 0px;
-        top: 0px;
+        color: #4443A3;
         transition: 1s;
+        transform: scale(1.1);
     }
 }
 
@@ -128,6 +127,7 @@ article.container-about {
     font-size: 20px;
     line-height: 2rem;
     margin-bottom: 10rem;
+    padding: 20px;
 }
 
 article.container-about header h1.header-about {
@@ -178,3 +178,202 @@ article.container-about section.describe p.thanks {
 section.for-space {
     height: 1rem;
 }
+
+@keyframes medium-active {
+    0% {
+        color: #2EA1DA;
+        transition: 1s;
+    }
+    25% {
+        color: #E83879;
+        transition: 1s;
+    }
+    50% {
+        color: #FBB845;
+        transition: 1s;
+    }
+    75% {
+        color: #28f153;
+        transition: 1s;
+    }
+    100% {
+        color: #4443A3;
+        transition: 1s;
+    }
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+
+@media screen and (max-width: 1599px) {}
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media screen and (max-width: 1399px) {}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media screen and (max-width: 1199px) {
+    article.container-about header h1.header-about {
+        left: -17rem;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media screen and (max-width: 991px) {
+    nav.navbar-mine ul.sidenav li {
+        width: 100px;
+    }
+    nav.navbar-mine ul.sidenav li.active {
+        width: 150px;
+        padding-left: 0;
+    }
+    nav.navbar-mine ul.sidenav li a {
+        padding-left: 0;
+    }
+    article.container-about header h1.header-about {
+        left: -15rem;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media screen and (max-width: 767px) {
+    /* navbar */
+    nav.navbar-mine {
+        background: url(.././imgs/blob-scene-haikei3.svg);
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        margin-bottom: 2rem;
+        z-index: 3;
+    }
+    nav.navbar-mine ul.sidenav {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100vw;
+        height: auto;
+    }
+    nav.navbar-mine ul.sidenav li {
+        width: 100vw;
+        height: 50px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav.navbar-mine ul.sidenav li:hover {
+        background-color: rgba(245, 245, 245, 0.226);
+        font-weight: bold;
+        width: 100vw;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+    }
+    nav.navbar-mine ul.sidenav li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        transition: 0.5s;
+    }
+    nav.navbar-mine button.button {
+        width: 100vw;
+        height: 50px;
+        display: flex;
+        justify-content: flex-end;
+        background-color: transparent;
+        border: none;
+        z-index: 3;
+    }
+    nav.navbar-mine button.button ion-icon {
+        display: flex;
+        margin-top: 0.5rem;
+        position: absolute;
+        right: 1rem;
+        color: white;
+        z-index: 3;
+    }
+    /* nav.navbar-mine ul.sidenav li:hover:not(.active) a {
+        font-weight: bold;
+        font-size: 18px;
+        color: #FBAE3C;
+    } */
+    nav.navbar-mine ul.sidenav li.active {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100vw;
+        left: -6px;
+    }
+    nav.navbar-mine ul.sidenav li.active a {
+        font-size: 2rem;
+        animation: medium-active 9s infinite;
+        transition: 0.5s;
+        text-transform: uppercase;
+        padding-left: 0;
+        position: relative;
+        left: -4px;
+        font-family: 'Rubik Gemstones', cursive;
+    }
+    /* nav.navbar-mine ul.sidenav li:hover.active a {
+        color: #FBAE3C;
+        font-size: 2.2rem;
+        font-weight: bold;
+        animation: none;
+        text-decoration: none;
+    } */
+    /* END navbar */
+    article.container-about header h1.header-about {
+        left: -11rem;
+    }
+    article.container-about section.describe {
+        text-align: start;
+        width: 80vw;
+    }
+    article.container-about section.describe p.my-path {
+        left: -2rem;
+    }
+}
+
+
+/* Extra-small devices (landscape phones, up to 576px) */
+
+@media screen and (max-width: 576px) {
+    nav.navbar-mine button.button ion-icon {
+        color: white;
+        font-weight: bold;
+    }
+    article.container-about header h1.header-about {
+        left: -5rem;
+    }
+    article.container-about section.describe p.my-path {
+        left: -1rem;
+    }
+}
+
+
+/* xxs devices (phones, up to 395px) */
+
+@media screen and (max-width: 395px) {
+    article.container-about header h1.header-about {
+        left: 0;
+    }
+    article.container-about section.describe p.my-path {
+        left: 0;
+    }
+}
+
+
+/* end MEDIA QUERIES */

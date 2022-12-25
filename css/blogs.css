@@ -14,8 +14,8 @@ body {
     width: 100vw;
     position: relative;
     z-index: 1;
-    background-color: #d2e1ec;
-    background-image: linear-gradient(to bottom, #bbcfe1 0%, #e8f2f6 80%);
+    background-color: whites;
+    /* background-image: linear-gradient(to bottom, #bbcfe1 0%, #e8f2f6 80%); */
     overflow: hidden;
 }
 
@@ -148,3 +148,44 @@ body {
         transform: translateY(-8.1rem);
     }
 }
+
+
+/* MEDIA QUERIES */
+
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+
+@media screen and (max-width: 1599px) {}
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media screen and (max-width: 1399px) {}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media screen and (max-width: 1199px) {}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media screen and (max-width: 991px) {}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media screen and (max-width: 767px) {}
+
+
+/* Extra-small devices (landscape phones, up to 576px) */
+
+@media screen and (max-width: 576px) {}
+
+
+/* xxs devices (phones, up to 395px) */
+
+@media screen and (max-width: 395px) {}
+
+
+/* end MEDIA QUERIES */
