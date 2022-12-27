@@ -101,7 +101,7 @@ section#sectionTop nav.navbar-mine {
     padding: 0;
     width: 100vw;
     height: 50px;
-    z-index: 2;
+    z-index: 3;
     background-color: #f3f3f35d;
 }
 
@@ -137,29 +137,36 @@ section#sectionTop nav.navbar-mine ul.sidenav li a {
 
 section#sectionTop nav.navbar-mine ul.sidenav li:hover:not(.active) {
     background-color: #ddd;
+    transition: 1s;
 }
 
 section#sectionTop nav.navbar-mine ul.sidenav li.active {
     background-color: #6664d5;
+    transition: 1s;
 }
 
 section#sectionTop nav.navbar-mine ul.sidenav li:hover.active {
     background-color: whitesmoke;
+    transition: 1s;
 }
 
 section#sectionTop nav.navbar-mine ul.sidenav li:hover:not(.active) a {
     color: #666;
+    font-weight: 500;
 }
 
 section#sectionTop nav.navbar-mine ul.sidenav li.active a {
     color: white;
     text-transform: uppercase;
     font-family: 'Rubik Gemstones', cursive;
+    transition: 1s;
 }
 
 section#sectionTop nav.navbar-mine ul.sidenav li:hover.active a {
     color: #666;
     font-weight: 500;
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 

@@ -7,49 +7,19 @@
 
     <link href="imgs/favicon.ico" rel="icon" type="image/x-icon" />
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/top.css">
-    <link rel="stylesheet" href="css/skills.css" />
-    <link rel="stylesheet" href="css/certificates.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/top.min.css">
+    <link rel="stylesheet" href="css/skills.min.css" />
+    <link rel="stylesheet" href="css/certificates.min.css" />
     <link rel="stylesheet" href="css/magic.min.css">
-    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/projects.min.css">
 
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" media="screen">
 
     <title>CV Profile</title>
 
     <script>
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            /*loop through a collection of all HTML elements:*/
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
-                file = elmnt.getAttribute("w3-include-html");
-                if (file) {
-                    /*make an HTTP request using the attribute value as the file name:*/
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function() {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) {
-                                elmnt.innerHTML = this.responseText;
-                            }
-                            if (this.status == 404) {
-                                elmnt.innerHTML = "Page not found.";
-                            }
-                            /*remove the attribute, and call this function once more:*/
-                            elmnt.removeAttribute("w3-include-html");
-                            includeHTML();
-                        }
-                    }
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    /*exit the function:*/
-                    return;
-                }
-            }
-        };
+       function includeHTML(){var t,e,n,i,s;for(t=document.getElementsByTagName("*"),e=0;e<t.length;e++)if(i=(n=t[e]).getAttribute("w3-include-html"))return(s=new XMLHttpRequest).onreadystatechange=function(){4==this.readyState&&(200==this.status&&(n.innerHTML=this.responseText),404==this.status&&(n.innerHTML="Page not found."),n.removeAttribute("w3-include-html"),includeHTML())},s.open("GET",i,!0),void s.send()}
     </script>
 </head>
 
@@ -163,17 +133,18 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js " integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
-    <script src="js/script.js"></script>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <script src="js/lib/anime.min.js "></script>
-    <script src="js/about.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/about.min.js"></script>
 
-    <script src="js/reload.js "></script>
-    <script src="js/carousel.js"></script>
-    <script src="js/scroll.js"></script>
+    <script src="js/reload.min.js "></script>
+    <script src="js/carousel.min.js"></script>
+    <script src="js/scroll.min.js"></script>
 
 
     <script>
