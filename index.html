@@ -19,7 +19,13 @@
     <title>CV Profile</title>
 
     <script>
-       function includeHTML(){var t,e,n,i,s;for(t=document.getElementsByTagName("*"),e=0;e<t.length;e++)if(i=(n=t[e]).getAttribute("w3-include-html"))return(s=new XMLHttpRequest).onreadystatechange=function(){4==this.readyState&&(200==this.status&&(n.innerHTML=this.responseText),404==this.status&&(n.innerHTML="Page not found."),n.removeAttribute("w3-include-html"),includeHTML())},s.open("GET",i,!0),void s.send()}
+        function includeHTML() {
+            var t, e, n, i, s;
+            for (t = document.getElementsByTagName("*"), e = 0; e < t.length; e++)
+                if (i = (n = t[e]).getAttribute("w3-include-html")) return (s = new XMLHttpRequest).onreadystatechange = function() {
+                    4 == this.readyState && (200 == this.status && (n.innerHTML = this.responseText), 404 == this.status && (n.innerHTML = "Page not found."), n.removeAttribute("w3-include-html"), includeHTML())
+                }, s.open("GET", i, !0), void s.send()
+        }
     </script>
 </head>
 
@@ -36,12 +42,12 @@
             <button id='GenerateButton' class="button-outline-animate" onclick="generate();"><span>CLICK ME</span></button>
             <ul id="panel" class="sidenav">
                 <li class="active"><a href="#"><span>Home</span></a></li>
-                <li><a href="/about.html" target="_blank"><span>About</span></a></li>
+                <li><a href="cv/about.html" target="_blank"><span>About</span></a></li>
                 <li><a href="#sectionSkills"><span>Skills</span></a></li>
                 <li><a href="#sectionCertificate"><span>Certificates</span></a></li>
                 <li><a href="#sectionProjects"><span>Projects</span></a></li>
                 <li><a href="#sectionContacts"><span>Contacts</span></a></li>
-                <li><a href="/blogs.html" target="_blank"><span>Blogs</span></a></li>
+                <li><a href="cv/blogs.html" target="_blank"><span>Blogs</span></a></li>
             </ul>
         </nav>
         <div w3-include-html="snippets/top.html" class="container"></div>
@@ -124,7 +130,7 @@
                 <span class="footer-item"><a href="mailto:ksenya.markiv@gmail.com" class="btn-light-mine"><img src="imgs/gmail.png" alt="Gmail link with logo" width="85px" height="30px"> </a></span>
                 <span class="footer-item"><a href="https://github.com/KseniiaMarkiv?tab=repositories" class="btn-light-mine" target="_blank"><ion-icon name="logo-github" style="font-size: 2.2rem; color: black;"></ion-icon></a></span>
 
-                <span class="footer-item"><a href="https://www.linkedin.com/in/kseniia-markiv-7574191a6" class="btn-light-mine" target="_blank"><ion-icon name="logo-linkedin" style="font-size: 2.2rem; color: #0077b7;"></ion-icon></a></span>
+                <span class="footer-item"><a href="https://www.linkedin.com/in/kseniia-markiv" class="btn-light-mine" target="_blank"><ion-icon name="logo-linkedin" style="font-size: 2.2rem; color: #0077b7;"></ion-icon></a></span>
             </div>
         </div>
         <div class="row-copyright">
