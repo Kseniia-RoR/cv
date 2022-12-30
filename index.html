@@ -5,12 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="imgs/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="imgs/favicon.ico" rel="icon" type="image/x-icon">
 
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/top.min.css">
-    <link rel="stylesheet" href="css/skills.min.css" />
-    <link rel="stylesheet" href="css/certificates.min.css" />
+    <link rel="stylesheet" href="css/skills.min.css">
+    <link rel="stylesheet" href="css/certificates.min.css">
     <link rel="stylesheet" href="css/magic.min.css">
     <link rel="stylesheet" href="css/projects.min.css">
 
@@ -19,7 +19,13 @@
     <title>CV Profile</title>
 
     <script>
-       function includeHTML(){var t,e,n,i,s;for(t=document.getElementsByTagName("*"),e=0;e<t.length;e++)if(i=(n=t[e]).getAttribute("w3-include-html"))return(s=new XMLHttpRequest).onreadystatechange=function(){4==this.readyState&&(200==this.status&&(n.innerHTML=this.responseText),404==this.status&&(n.innerHTML="Page not found."),n.removeAttribute("w3-include-html"),includeHTML())},s.open("GET",i,!0),void s.send()}
+        function includeHTML() {
+            var t, e, n, i, s;
+            for (t = document.getElementsByTagName("*"), e = 0; e < t.length; e++)
+                if (i = (n = t[e]).getAttribute("w3-include-html")) return (s = new XMLHttpRequest).onreadystatechange = function() {
+                    4 == this.readyState && (200 == this.status && (n.innerHTML = this.responseText), 404 == this.status && (n.innerHTML = "Page not found."), n.removeAttribute("w3-include-html"), includeHTML())
+                }, s.open("GET", i, !0), void s.send()
+        }
     </script>
 </head>
 
@@ -62,7 +68,7 @@
             <div class="main-carousel">
                 <div class="carousel-cell">
                     <a href="https://github.com/KseniiaMarkiv/capstone-api/tree/8-module#all-objects" target="_blank">
-                        <img src="imgs/examples/capstone.jpeg " class="carousel-imgs" alt="Capstone app from 6 Course Coursera">
+                        <img src="imgs/examples/capstone.jpeg" class="carousel-imgs" width="1267" height="400" alt="Capstone app from 6 Course Coursera">
                         <div class="overlay">
                             <div class="text">
                                 <h5>Capstone app from 6 Course Coursera &#8208; is for look for nearest place to you.</h5>
@@ -74,7 +80,7 @@
                     </a>
                 </div>
                 <div class="carousel-cell">
-                    <a href="https://kseniiamarkiv.github.io/qr-code/second-var/" target="_blank"><img src="imgs/examples/qr-code2.jpg" class="carousel-imgs" alt="QR Code Generator">
+                    <a href="https://kseniiamarkiv.github.io/qr-code/second-var/" target="_blank"><img src="imgs/examples/qr-code2.jpg" class="carousel-imgs" width="1267" height="400" alt="QR Code Generator version 2">
                         <div class="overlay">
                             <div class="text">
                                 <h5>QR Code Generator</h5>
@@ -84,7 +90,7 @@
                     </a>
                 </div>
                 <div class="carousel-cell">
-                    <a href="https://kseniiamarkiv.github.io/course5/assignment5/#/" target="_blank"><img src="imgs/examples/restaurant.jpeg " class="carousel-imgs" alt="Restaurant DAVID CHU'S CHINA BISTRO">
+                    <a href="https://kseniiamarkiv.github.io/course5/assignment5/#/" target="_blank"><img src="imgs/examples/restaurant.jpeg " class="carousel-imgs" width="1267" height="400" alt="Restaurant DAVID CHU'S CHINA BISTRO">
                         <div class="overlay">
                             <div class="text">
                                 <h5>Restaurant DAVID CHU'S CHINA BISTRO</h5>
@@ -95,10 +101,10 @@
                         </div>
                     </a>
                 </div>
-                <div class="carousel-cell"> <img src="imgs/examples/app-search-books-rails.jpeg" class="carousel-imgs " alt="... ">
+                <div class="carousel-cell"> <img src="imgs/examples/app-search-books-rails.jpeg" class="carousel-imgs" width="1267" height="400" alt="implement API books">
                 </div>
                 <div class="carousel-cell">
-                    <a href="https://kseniiamarkiv.github.io/qr-code/first-var/" target="_blank"><img src="imgs/examples/qr-code.jpg" class="carousel-imgs" alt="QR Code Generator">
+                    <a href="https://kseniiamarkiv.github.io/qr-code/first-var/" target="_blank"><img src="imgs/examples/qr-code.jpg" class="carousel-imgs" width="1267" height="400" alt="QR Code Generator version 1">
                         <div class="overlay">
                             <div class="text">
                                 <h5>QR Code Generator</h5>
@@ -122,7 +128,7 @@
             </div>
             <div class="items-footer">
                 <span class="footer-item"><a href="mailto:ksenya.markiv@gmail.com" class="btn-light-mine"><img src="imgs/gmail.png" alt="Gmail link with logo" width="85px" height="30px"> </a></span>
-                <span class="footer-item"><a href="https://github.com/KseniiaMarkiv?tab=repositories" class="btn-light-mine" target="_blank"><ion-icon name="logo-github" style="font-size: 2.2rem; color: black;"></ion-icon></a></span>
+                <span class="footer-item"><a href="https://github.com/KseniiaMarkiv?tab=repositories" class="btn-light-mine github" target="_blank"><ion-icon name="logo-github" style="font-size: 2.2rem; color: black;"></ion-icon></a></span>
 
                 <span class="footer-item"><a href="https://ee.linkedin.com/in/kseniia-markiv" class="btn-light-mine" target="_blank"><ion-icon name="logo-linkedin" style="font-size: 2.2rem; color: #0077b7;"></ion-icon></a></span>
             </div>

@@ -29,6 +29,8 @@ section#sectionCertificate {
     justify-content: center;
     gap: 2rem;
     background-color: #2d2c6c;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 section#sectionCertificate div.container-certificate {
